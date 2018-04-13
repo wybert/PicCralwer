@@ -1,0 +1,5 @@
+cookie: 
+sleep_interval: 30
+url_list_path: pic_url_list.csv
+picdir: /media/kandy/文档/dataDir/taifengPics1/
+start: 0
