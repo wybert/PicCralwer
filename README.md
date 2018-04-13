@@ -49,7 +49,9 @@ picdir: /media/kandy/文档/dataDir/taifengPics1/
 start: 0
 ```
 
-## 在命令行,切换到`PicCralwer`目录下
+## 运行
+
+在命令行,切换到`PicCralwer`目录下
 
 ```bash
 python crawlPictureV3.py
