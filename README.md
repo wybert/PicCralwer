@@ -30,7 +30,7 @@ conda install pandas
 
 ##  设置
 
-1. 打开 `setting.yml`文件,设置
+打开 `setting.yml`文件,设置
 
 ```
 ## 在浏览器登录微博账号,然后按F12,之后刷新,找到 cookie并copy到这里
@@ -49,7 +49,7 @@ picdir: /media/kandy/文档/dataDir/taifengPics1/
 start: 0
 ```
 
-2. 在命令行,切换到`PicCralwer`目录下
+## 在命令行,切换到`PicCralwer`目录下
 
 ```bash
 python crawlPictureV3.py
