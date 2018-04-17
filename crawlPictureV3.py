@@ -13,6 +13,7 @@ import random
 import datetime
 import time
 import yaml
+import click
 
 '''
 抓取网页文件内容，保存到内存
@@ -87,13 +88,16 @@ def crawlerPics(cookie, sleep_interval,url_list_path,picdir,start):
             time.sleep(sleeptime_one)
 
 
-
-
+@click.command()
+@click.option('--settings_path', default='setting.yml', help='setting 文件的路径')
+def my_app(settings_path):
+    
+    pars = yaml.load(open(settings_path))
+    crawlerPics(**pars)
 
 if __name__ == '__main__':
-
-    pars = yaml.load(open('setting.yml'))
-    crawlerPics(**pars)
+    
+    my_app()
 
 
 

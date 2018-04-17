@@ -6,12 +6,12 @@
 1. python3
 
 
-2. python 包 pandas
+2. python 包 pandas click
 
 ```
-pip install pandas
+pip install pandas click
 #or
-conda install pandas
+conda install pandas click
 ```
 
 3. 要爬取的图片的url文件
@@ -54,7 +54,16 @@ start: 0
 在命令行,切换到`PicCralwer`目录下
 
 ```bash
-python crawlPictureV3.py
+python crawlPictureV3.py --settings_path [setting file path]
 
 ```
 
+TODO:
+
+- 测试 访问限制和 账号以及 ip 的关系
+
+一个多个账号可以在一个 ip 下面同时使用
+
+- 账号的限制可以通过搜集账号获得
+- 这样自动化的获得cookies就可以了
+- 测试自动化获得cookies
