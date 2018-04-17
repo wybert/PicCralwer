@@ -23,9 +23,9 @@ def get_file(url,COOKIE):
     # cookies =  open(COOKIE).read().strip('\n')
     HEADERS = {"cookie": COOKIE}
     req = urllib.request.Request(url, headers=HEADERS)
-    for i in range(1,20):
+    for i in range(1,30):
         try:
-            script = urllib.request.urlopen(req,timeout = 12).read()
+            script = urllib.request.urlopen(req,timeout = 30).read()
             break
         except Exception as e:
             pass
